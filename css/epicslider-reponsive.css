@@ -1,0 +1,110 @@
+/*------------------------------------------------------
+
+	Theme Name: epicslider
+	Type: Responsive framework
+	Author: UDTHEMES
+	Copyright:UDTHEMES
+	Version:1.3
+
+------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+
+	/*epic
+	-----------------------------*/
+	
+	/*nave*/
+	.epicSlider.theme-default #epic-navigation{position:absolute;}
+	
+	/*captions*/
+	.epicSlider.theme-default .epic-caption{position:absolute;}
+
+}
+
+
+
+/*Mobile Layout: Landscape Container width:768px
+
+-----------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+	/*epic
+	-----------------------------*/
+	
+	.epicSlider.slider-wrapper{height:520px;}
+	
+	/*nav*/
+	.epicSlider.theme-default #epic-navigation{position:absolute;}
+	
+	
+	/*captions*/
+	.epicSlider.theme-default .epic-caption{position:absolute;}
+
+}
+
+
+/*Mobile Layout: Landscape Container width:480px
+
+-----------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	/*epic
+	-----------------------------*/
+	
+	.epicSlider.slider-wrapper{height:430px;}
+	
+	/*nav*/
+	.epicSlider.theme-default #epic-navigation{position:absolute;bottom:10px;left:50%;margin-left:-41px; width:82px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+	
+	/*captions*/
+	.epic-caption h1,.epic-caption h2,.epic-caption h3,.epic-caption h4,.epic-caption h5,.epic-caption h6{font-size:20px; line-height:20px;}
+	.epic-caption span, .epic-caption div, .epic-caption a span{background:none !important;color:#fff !important;width:100% !important;padding:0;margin:0; border:none !important;}
+	.epic-caption a, .epic-caption a:hover{font-size: inherit;background:none !important;color:#fff !important;}
+	.epic-caption.topLeft,.epic-caption.topRight,.epic-caption.bottomLeft,.epic-caption.bottomRight{top:auto;left:auto;bottom:60px;right:auto; text-align:center; float:none;}
+	.epic-caption{position:absolute;overflow:hidden;background:#000;/*ie8 fallback*/background:rgba(0,0,0,0.8); bottom:60px; padding:20px 0 !important; height:auto;width:100% !important;border:none !important;}
+	.epic-caption p{margin-top:10px;}
+	
+	/*for graphic content only - theme specific*/
+	.epic-caption.graphic-content{background:none !important;}
+	
+		
+
+}
+
+/*Mobile Layout: Portrait Container width:320px
+
+-----------------------------------------------*/
+
+@media only screen and (max-width: 479px){
+
+	/*epic
+	-----------------------------*/
+	
+	.epicSlider.slider-wrapper{height:430px;}
+	
+	/*nav*/
+	.epicSlider.theme-default #epic-navigation{position:absolute;bottom:10px;left:50%;margin-left:-41px; width:82px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;left:50%;margin-left:-65px; } /*sum of all three buttons*/
+	
+	/*captions*/
+	.epic-caption h1,.epic-caption h2,.epic-caption h3,.epic-caption h4,.epic-caption h5,.epic-caption h6{font-size:20px; line-height:20px;}
+	.epic-caption span, .epic-caption div, .epic-caption a span{background:none !important;color:#fff !important;width:100% !important;padding:0;margin:0; border:none !important;}
+	.epic-caption a, .epic-caption a:hover{font-size: inherit;background:none !important;color:#fff !important;}
+	.epic-caption.topLeft,.epic-caption.topRight,.epic-caption.bottomLeft,.epic-caption.bottomRight{top:auto;left:auto;bottom:60px;right:auto; text-align:center; float:none;}
+	.epic-caption{position:absolute;overflow:hidden;background:#000;/*ie8 fallback*/background:rgba(0,0,0,0.8); bottom:60px; padding:20px 0 !important; height:auto;width:100% !important;border:none !important;}
+	.epic-caption p{margin-top:10px;}
+	
+	/*for graphic content only - theme specific*/
+	.epic-caption.graphic-content{background:none !important;}
+	
+	
+
+
+}

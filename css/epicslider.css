@@ -1,0 +1,204 @@
+/*------------------------------------------------------
+
+	Skin Name: Epic Default
+	Description: base skin for the Epic Slider.
+	Author: UDTHEMES
+	Copyright:UDTHEMES
+	Version:1.3
+
+------------------------------------------------------*/
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+	*/
+	
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; }
+	
+	body{background:#000;font:12px/14px Arial, Helvetica, sans-serif;}
+
+
+	/*Wrapper
+	-------------------*/
+	
+	.epicSlider.slider-wrapper{width:100%;height:650px;position:relative;overflow:hidden;top:0px;left:0px; background: url(../images/ui_epicslider/loader.gif) center center no-repeat;margin-bottom:30px;}
+
+	/*Overlay
+	-------------------*/
+	
+	.epicSlider.theme-default #epic-overlay{position:absolute;width:100%;height:100%;background:transparent url(../images/ui_epicslider/pattern.png) repeat top left;z-index:2;}
+	
+
+	/*Slides
+	-------------------*/
+	
+	.epicSlider.theme-default #slides img{position:absolute;top:0px;left:0px;width:100%;display:none;max-width:none;/* -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges;*/}
+
+
+	/*Navigation
+	-------------------*/
+	
+	.epicSlider.theme-default #epic-navigation{position:absolute;z-index:5;bottom:50px;right:65px;width:82px;height:40px;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{width:124px;} /*sum of all three buttons*/
+	.epicSlider.theme-default #epic-navigation .nav-button{background-color:#000;/*fallback for iE8*/background:rgba(0,0,0,1);width:40px;height:40px;float:left;cursor:pointer;margin-right:2px;}
+	.epicSlider.theme-default #epic-navigation .nav-button.nav-last{margin-right:0;}/*:last-child{margin-right:0;}-if i8 isn't supported*/
+	.epicSlider.theme-default #epic-navigation .nav-button.disabled{opacity:0.5}
+	.epicSlider.theme-default #epic-navigation .nav-button #play{position:absolute;background:url(../images/ui_epicslider/pause-play-theme-default.png) center 0 no-repeat;width:40px;height:40px;float:left;cursor:pointer;margin-right:5px;}
+	.epicSlider.theme-default #epic-navigation .nav-button #play.active{background:url(../images/ui_epicslider/pause-play-theme-default.png) center -40px no-repeat;}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress{background-color:#ff0000;/*fallback for iE8*/bottom:0;position:absolute;height:40px;background: rgba(255,0,0,1);}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress.reset{width:0px !important;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.left{background:url(../images/ui_epicslider/nav-theme-default.png) center 0 no-repeat;width:40px;height:40px;float:left;margin-right:5px;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.right{background:url(../images/ui_epicslider/nav-theme-default.png) center -40px no-repeat;width:40px;height:40px;float:left;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../images/ui_epicslider/nav-theme-default.png) center -120px no-repeat;width:40px;height:40px;float:left;margin-right:5px;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.up{background:url(../images/ui_epicslider/nav-theme-default.png) center -80px no-repeat;width:40px;height:40px;float:left;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next:hover,.epicSlider.theme-default #epic-navigation .nav-button #prev:hover{background-color:#ff0000;/*fallback for iE8*/background-color:rgba(255,0,0,1);}
+	/*.epicSlider.theme-default #epic-navigation #play:hover{background:rgba(0,0,0,1) url(../ui/pause-play-theme-default.png) center 0 no-repeat;}*/
+
+
+	/*Graphics or custom
+	 js elements
+	-------------------*/
+	
+	.epic-graphic{display:table-cell !important; vertical-align:middle;text-align:center;width:100%;}
+	.epic-graphic img{max-width:100%;margin:auto;}
+	
+
+	/*Caption - text
+	-------------------*/
+	
+	.epic-caption{z-index:3;display:none;position:absolute;}
+	
+	/*position:left*/
+	.epic-caption.topLeft{top:75px;left:65px; text-align:left; float:left;}
+	.epic-caption.bottomLeft{bottom:100px;left:65px; text-align:left; float:left;}	
+	
+	/*position:right*/
+	.epic-caption.topRight{top:75px;right:65px; left:auto; text-align:right; float:right;}
+	.epic-caption.bottomRight{bottom:100px;right:65px; left:auto; text-align:right; float:right;}
+	
+	/*colors: black,white, theme*/
+	.epic-caption.caption-color-black,.epic-caption.caption-color-black span,.epic-caption.caption-color-black span a{color:#000;border-color:#000;}
+	.epic-caption.caption-color-white,.epic-caption.caption-color-white span,.epic-caption.caption-color-white span a{color:#fff;border-color:#fff;}
+	.epic-caption.caption-color-theme,.epic-caption.caption-color-theme span,.epic-caption.caption-color-theme span a{color:#ff0000;border-color:#ff0000;}
+	
+	
+	/*caption type: boxed no border*/
+	/*.epic-caption-single-border{}*/
+	
+	
+		/*sizes*/
+		.epic-caption-single-border h1{font-size:100px;line-height:75px;padding-top:10px;}
+		.epic-caption-single-border h2{font-size:80px;line-height:60px;padding-top:8px;}
+		.epic-caption-single-border h3{font-size:60px;line-height:45px;padding-top:8px;}
+		.epic-caption-single-border h4{font-size:50px;line-height:40px;padding-top:8px;}
+		.epic-caption-single-border h5{font-size:40px;line-height:30px;padding-top:8px;}
+		.epic-caption-single-border h6{font-size:30px;line-height:25px;padding-top:8px;}
+		
+		/*font variation*/
+		.epic-caption-single-border span.variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*positioning*/
+		.epic-caption-single-border.topLeft,.epic-caption-single-border.bottomLeft{border-left:10px solid;padding-left:20px;}
+		.epic-caption-single-border.topRight,.epic-caption-single-border.bottomRight{border-right:10px solid;padding-right:20px;}
+		
+
+	/*caption type: boxed no border*/
+	.epic-caption-boxed-noborder{padding:20px 0; font-family:Arial, Helvetica, sans-serif;line-height:16px;}
+	
+		/*sizes*/
+		.epic-caption-boxed-noborder h1{font-size:65px; line-height:65px;}
+		.epic-caption-boxed-noborder h2{font-size:50px; line-height:50px;}
+		.epic-caption-boxed-noborder h3{font-size:40px; line-height:40px;}
+		.epic-caption-boxed-noborder h4{font-size:35px; line-height:35px;}
+		.epic-caption-boxed-noborder h5{font-size:30px; line-height:30px;}
+		.epic-caption-boxed-noborder h6{font-size:25px; line-height:25px;}
+		.epic-caption-boxed-noborder p{margin:20px 0 0 0;}
+		.epic-caption-boxed-noborder span {border-bottom:1px solid;}
+		
+		/*font variation*/
+		.epic-caption-boxed-noborder span.variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+
+	
+	/*caption type: boxed background*/
+	.epic-caption-boxed-background{padding:20px; font-family:Arial, Helvetica, sans-serif;line-height:16px;}
+	
+		/*sizes*/
+		.epic-caption-boxed-background h1{font-size:28px; line-height:28px;}
+		.epic-caption-boxed-background h2{font-size:25px; line-height:25px;}
+		.epic-caption-boxed-background h3{font-size:22px; line-height:22px;}
+		.epic-caption-boxed-background h4{font-size:19px; line-height:19px;}
+		.epic-caption-boxed-background h5{font-size:16px; line-height:16px;}
+		.epic-caption-boxed-background h6{font-size:13px; line-height:13px;}
+		.epic-caption-boxed-background p{margin:20px 0 0 0;}
+		
+		/*font variation*/
+		.epic-caption-boxed-background span.variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-boxed-background.caption-color-black{background:#000;background:rgba(0,0,0,0.8);color:#fff;}
+		.epic-caption-boxed-background.caption-color-black span{color:#fff;}
+		.epic-caption-boxed-background.caption-color-white{background:#fff;background:rgba(255,255,255,0.8);color:#000;}
+		.epic-caption-boxed-background.caption-color-white span{color:#000;}
+		.epic-caption-boxed-background.caption-color-theme{background:#fff;background:rgba(255,255,255,0.8);color:#ff0000;}
+		.epic-caption-boxed-background.caption-color-theme span{color:#ff0000;}
+	
+	
+	
+	/*caption type: striped  */
+	/*.epic-caption-striped{}*/
+	
+		/*sizes*/
+		.epic-caption-striped h1{font-size:100px;line-height:100px; }
+		.epic-caption-striped h2{font-size:80px;line-height:80px;}
+		.epic-caption-striped h3{font-size:60px;line-height:60px;}
+		.epic-caption-striped h4{font-size:50px;line-height:50px;}
+		.epic-caption-striped h5{font-size:40px;line-height:40px;}
+		.epic-caption-striped h6{font-size:30px;line-height:30px;}
+
+		/*font variation*/
+		.epic-caption-striped span.variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		/*colors*/
+		.epic-caption-striped.caption-color-black span{background:rgb(0,0,0);color:#fff;}
+		.epic-caption-striped.caption-color-white span{background:rgb(255,255,255);color:#000;}
+		.epic-caption-striped.caption-color-theme span{background:rgb(255,255,255);color:#ff0000;}
+		.epic-caption-striped a span{padding:15px;}
+		.epic-caption-striped a:hover span{background: rgb(255,0,0); color:#fff;}
+		
+		/*positioning*/
+		.epic-caption-striped.topLeft span,.epic-caption-striped.bottomLeft span{float:left;}
+		.epic-caption-striped.topRight span,.epic-caption-striped.bottomRight span{float:right;}
+		
+		/*link*/
+		.epic-caption-striped span{ padding: 15px 20px 4px; font-family:inherit;float:inherit; font-weight:inherit;margin-bottom:3px;}
+		.epic-caption-striped a {font-size:20px;line-height:20px;position:relative; color:#999;}
+	
+	
+	
+	/*caption type: centered  */
+	.epic-caption-centered{width:100%;height:100%;}
+	.epic-caption-centered div{display:table;width:100%;height:100%;}
+	.epic-caption-centered h1,.epic-caption-centered h2,.epic-caption-centered h3,.epic-caption-centered h4,.epic-caption-centered h5,.epic-caption-centered h6{display:table-cell; vertical-align:middle; width:100%; text-align:center;}
+	.epic-caption-centered div span{border-top:1px solid;border-bottom:1px solid;padding:20px 0 15px 0;}
+	
+		/*sizes*/
+		.epic-caption-centered h1{font-size:100px;line-height:82px;}
+		.epic-caption-centered h2{font-size:80px;line-height:62px;}
+		.epic-caption-centered h3{font-size:70px;line-height:52px;}
+		.epic-caption-centered h4{font-size:60px;line-height:42px;}
+		.epic-caption-centered h5{font-size:50px;line-height:32px;}
+		.epic-caption-centered h6{font-size:40px;line-height:22px;}
+		
+		/*font variation*/
+		.epic-caption-centered span.variation{font-weight:normal;font-family: 'Quicksand', sans-serif;}
+		
+		
+	/*font*/
+	.epic-caption h1,.epic-caption h2,.epic-caption h3,.epic-caption h4,.epic-caption h5,.epic-caption h6{font-family: 'BebasNeueRegular', Arial, sans-serif;margin-bottom:0;/*text-shadow: 4px 5px 0px rgba(0, 0, 0, 0.3);*/}
+	a{color:#ff0000; text-decoration:none;}
+	
+	
+	
+	
+	
+

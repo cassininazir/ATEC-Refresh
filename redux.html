@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+<title>ATEC Redesign</title>
+<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"/>
+<link rel="stylesheet" type="text/css" href="css/epicfullscreen.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_media_queries.css" />
+
+<!--font-->
+<link rel="stylesheet" type="text/css" href="css/font/bebasneue.css"  charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--js-->
+<script type="text/javascript" src="http://use.typekit.net/vsc6kcv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="js/iOS-timer.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/typingtext.js"></script>
+<script type="text/javascript" src="js/jquery.epicHover-fadeZoom.js"></script>
+<script type="text/javascript" src="js/jquery.epicfullscreen.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.js"></script>
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	
+			/*device check
+			---------------------*/
+			
+			var isMobile = false;
+	
+			if( navigator.userAgent.match(/Android/i) || 
+				navigator.userAgent.match(/webOS/i) ||
+				navigator.userAgent.match(/iPhone/i) || 
+				navigator.userAgent.match(/iPad/i)|| 
+				navigator.userAgent.match(/iPod/i) || 
+				navigator.userAgent.match(/BlackBerry/i)){
+								
+					isMobile = true;
+							
+			}
+			
+			
+			/*grid
+			---------------------*/
+			
+			/*init*/
+			$(function(){
+			
+				var cols = 3
+				var masonry = $('#grid');
+			
+				calculateCols();
+		
+				// initialize masonry
+				masonry.imagesLoaded(function(){
+					
+					masonry.masonry({
+						itemSelector: '.thumb',
+						isResizable: true,
+						columnWidth:Math.floor((masonry.width()/ cols))
+					  });
+					
+				});
+				
+			  /*resize*/
+			  $(window).resize(function(){
+					
+					
+					calculateCols();
+					
+					masonry.imagesLoaded(function(){
+					
+					  masonry.masonry({
+						itemSelector: '.thumb',
+						isResizable: false,
+						 isAnimated: false,
+						columnWidth:Math.floor((masonry.width() / cols))
+					  });
+				
+					});
+					
+				});
+				
+				function calculateCols (){
+				
+					if(masonry.width() <= 426){
+					
+						 cols=2;
+					 
+					}else{
+				
+						cols=3;
+				
+					}
+				}
+			
+		  });
+
+</script>
+</head>
+<body>
+
+<!--background image
+	<div class="epicFullscreen">
+		<img class="epicImg" src="images/fullscreen-bkg.jpg" alt=""/>
+	</div>--> 
+
+<!--start header-->
+<div id="header-wrapper">
+  <div id="header-inner">
+    <header>
+      <div id="logo"> <a href="index.html">Branding logos</a> </div>
+      
+      <!--mobileMenu toggle-->
+      <div class="mobileMenuToggle"><a href=""></a></div>
+      <nav>
+        <ul class="navigation">
+          <li><a href="about.html">About</a>
+            <ul class="sub-menu">
+              <li><a href="#">Building</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Mission and history</a></li>
+              <li><a href="#">Achievements</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News and Events</a> </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>
+<!--start content-->
+<div id="content-wrapper">
+  <section class="homepage"> 
+    <!--start section title-->
+    <div id="section-title">
+      <h4 id="typeme">We reside in the chaotic space between arts and technology. </h4>
+    </div>
+    <script type="text/javascript">
+		new TypingText(document.getElementById("typeme"), 60, function(i){ var ar = new Array("_", " "); return " " + ar[i.length % ar.length]; });
+		TypingText.runAll();
+	</script> 
+    <!--start grid-->
+    <div id="grid" class="clearfix">
+      <div class="thumb thumb-type-2"> <a href="folio/project-1.html" title="Project-1" data-caption="caption"> <img src="images/project-1.jpg" alt="project 1"/>
+        <figcaption>Research</figcaption>
+        </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-2.html" data-caption="caption"> <img src="images/project-2.jpg" alt="project 1"/>
+        <figcaption>Academics</figcaption>
+        </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-3.html" data-caption="caption"> <img src="images/project-3.jpg" alt="project 1"/>
+        <figcaption>Colloquia Series</figcaption>
+        </a> </div>
+      <div class="thumb thumb-type-2"> <a href="folio/project-8.html" data-caption="caption"> <img src="images/project-4.jpg" alt="project 1"/>
+        <figcaption>Our New Home</figcaption>
+        </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-9.html" data-caption="caption"> <img src="images/project-5.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-7.html" data-caption="caption"> <img src="images/project-15.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-3"> <a href="folio/project-5.html" data-caption="caption"> <img src="images/project-7.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-4"> <a href="folio/project-11.html" data-caption="caption"> <img src="images/project-8.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-4.html" data-caption="caption"> <img src="images/project-9.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-10.html" data-caption="caption"> <img src="images/project-10.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-7.html" data-caption="caption"> <img src="images/project-11.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-4.html" data-caption="caption"> <img src="images/project-12.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-4.html" data-caption="caption"> <img src="images/project-13.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-2"> <a href="folio/project-2.html" data-caption="caption"> <img src="images/project-14.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-3.html" data-caption="caption"> <img src="images/project-17.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-4.html" data-caption="caption"> <img src="images/project-6.jpg" alt="project 1"/> </a> </div>
+      <div class="thumb thumb-type-1"> <a href="folio/project-5.html" data-caption="caption"> <img src="images/project-16.jpg" alt="project 1"/> </a> </div>
+    </div>
+  </section>
+</div>
+<!--start footer-->
+<div id="footer-wrapper">
+  <div id="footer-top" class="clearfix">
+    <footer>
+      <div class="column_one_third column-footer-widget">
+        <div class="widget_text">
+          <div id="footer-logo">
+            <h6 class="widgettitle">Title</h6>
+          </div>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, ... Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">Read More.</a></p>
+        </div>
+      </div>
+      <div class="column_one_third column-footer-widget">
+        <div class="widget_twitter">
+          <h6 class="widgettitle">Title</h6>
+          <div id='filter' class="query"></div>
+        </div>
+      </div>
+      <div class="column_one_third column-footer-widget last">
+        <div class="widget_text">
+          <h6 class="widgettitle">Title</h6>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</p>
+          <p>Tel: 972-883-ATEC
+            Mail: <a href="">atec@utdallas.edu</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div id="footer-bottom">
+    <footer> 
+      <!--social networks-->
+      <p class="footer-copyright">&copy; copyright 2013. The University of Texas at Dallas. All Rights Reserved.</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

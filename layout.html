@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+
+<title>ATEC Design Palette</title>
+
+<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css"/>
+<link rel="stylesheet" type="text/css" href="css/epicfullscreen.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="css/udt_media_queries.css" />
+
+<!--font-->
+<link rel="stylesheet" type="text/css" href="css/font/bebasneue.css"  charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand" />
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--js-->
+<script type="text/javascript" src="http://use.typekit.net/vsc6kcv.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/jquery.epicHover-fadeZoom.js"></script>
+<script type="text/javascript" src="js/jquery.epicfullscreen.js"></script>
+<script type="text/javascript" src="js/udt_shortcodes.js"></script>
+
+<script type="text/javascript">
+	
+			/*device check
+			---------------------*/
+			
+			var isMobile = false;
+	
+			if( navigator.userAgent.match(/Android/i) || 
+				navigator.userAgent.match(/webOS/i) ||
+				navigator.userAgent.match(/iPhone/i) || 
+				navigator.userAgent.match(/iPad/i)|| 
+				navigator.userAgent.match(/iPod/i) || 
+				navigator.userAgent.match(/BlackBerry/i)){
+								
+					isMobile = true;
+							
+			}
+			
+			$(document).ready(function(){
+			
+				/*epic hover plugin
+				---------------------*/
+				
+				$(function() {
+				
+					$('.thumb').epicHoverFadeZoom({
+						 
+							overlayColor:'#fff',						//Hex: #xxxx
+							fontColor:'#000',							//Hex: #xxxx
+							captionDirection:'topToBottom', 			//String: caption slide in/out direction
+							opacity: 0.8,								//Integer: 0-1
+							transitionSpeed:600,						//Integer: transitions speed, in milliseconds
+							easing:'swing',								//String: easing method - see http://jqueryui.com/demos/effect/easing.html
+							padding: 0,									//Integer: padding
+							mobileActive:false,							//Boolean: whether to activate/deactivate for mobile
+							zoom:50										//Integer: zoom factor
+						 
+					});	
+				
+				});
+				
+				/*epic fullscreen plugin
+				---------------------*/
+				
+				/*$(function() {
+				
+					$('.epicFullscreen').epicFullscreen({
+					 
+						opacity:0.3,
+						background:'#fff',
+						pattern:true
+					 
+					 });	
+						
+				});*/
+			
+			});
+			
+			
+			/*twitter plugin
+			---------------------*/
+			
+			$(function(){
+			
+			  $("#filter").tweet({
+				count: 1,
+				fetch: 20,
+				filter: function(t){ return ! /^@\w+/.test(t["tweet_raw_text"]); },
+				username: "udfrance"
+			  });
+			  
+			});
+
+</script>
+
+
+
+</head>
+<body>
+
+	<!--background image
+	<div class="epicFullscreen">
+		<img class="epicImg" src="images/fullscreen-bkg.jpg" alt=""/>
+	</div>-->
+
+	<!--start header-->
+    <div id="header-wrapper">
+    	<div id="header-inner">
+        	<header>
+            	<div id="logo">
+                	<a href="index.html">logo</a>
+                </div>
+                
+                <!--mobileMenu toggle-->
+             	<div class="mobileMenuToggle"><a href=""></a></div>
+                
+		  <nav>
+                	<ul class="navigation">
+                    	<li><a href="index.html">Nav</a></li>
+                        <li><a href="about.html">Items</a>
+                        	<ul class="sub-menu">
+                            	<li><a href="#">Sub menu item</a></li>
+								<li><a href="#">Another sub menu item</a></li>
+								<li><a href="#">And another sub menu item</a></li>
+								<li><a href="#">And yet another</a></li>
+                             <li><a href="#">And another</a></li>
+							</ul>
+                        </li>
+                    </ul>
+			  </nav>
+              
+        	</header>
+        </div>
+    </div>
+    
+    <!--start content-->
+    <div id="content-wrapper">
+    
+    	<section class="pages clearfix">
+        	<!--start section title-->
+            <div id="section-title">
+              <h1>STYLES</h1>
+            </div>
+            <!--start teaser-->
+            <div id="teaser">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            
+            <h1>H1 <span>Title</span></h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<h2>H2 <span>Title</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<h3>H3 <span>Title</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<h4>H4 <span>Title</span></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<h5>H5 <span>Title</span></h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<h6>H6 <span>Title</span></h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			
+			<div class="divider"></div>
+			
+			<h4>Column halfs</h4>
+			
+			<div class="column_one_half">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			 
+			<div class="column_one_half last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<h4>Column thirds</h4>
+			
+			<div class="column_one_third">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="column_one_third">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+            
+			<div class="column_one_third last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<h4>Column fourths</h4>
+			
+			<div class="column_one_fourth">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+
+			<div class="column_one_fourth">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>             
+			</div>
+			
+			<div class="column_one_fourth">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="column_one_fourth last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<h4>Column two thirds</h4>
+			
+			<div class="column_one_third">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+            
+			<div class="column_two_thirds last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="column_two_thirds">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="column_one_third last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<h4>Column three fourths</h4>
+			
+			<div class="column_one_fourth">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="column_three_fourths last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="column_three_fourths">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.< Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+			</div>
+			
+			<div class="column_one_fourth last">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.</p>
+			</div>
+			
+			<div class="clearfix"></div>
+			<div class="divider"></div>
+			<div class="clearfix"></div>
+			
+			<h4>Blockquote</h4>
+			<blockquote class="quote-single-border quote-color-black left">Single Border Quote - Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis.<p class="blockquote-cite">Tom Linehan</p></blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre.</p>
+            <blockquote class="quote-boxed-border quote-color-gray">Boxed Quote - Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis.<p class="blockquote-cite">Tom Linehan</p></blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
+            <blockquote class="quote-overlay-big quote-color-light-gray right">Big Overlay Quote - Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis.<p class="blockquote-cite">Tom Linehan</p></blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre.</p>
+              <blockquote class="quote-open-border-top quote-color-black">Border Top Quote - Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis.<p class="blockquote-cite">Tom Linehan</p></blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
+            
+            <blockquote class="quote-striped quote-color-black left"><span>Striped Quote</span><br/> 
+            <span> Lorem Ipsum dolor </span><br/>
+            <span>set amet, consectetur</span><br/>
+            <span>elit. Vestibulum enim arcu.</span>
+            <p class="blockquote-cite"><span>Tom Linehan</span></p></blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim arcu, venenatis et ligula sed, mollis porttitor est. Nulla sit amet mauris a lectus semper dictum nec ac tellus. Aliquam tempor adipiscing massa id venenatis. Phasellus posuere, dui vitae semper faucibus, augue tortor porttitor justo, sit amet facilisis ligula justo vel neque.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre.</p>
+			
+			<div class="divider"></div>
+			<div class="clearfix"></div>
+			
+			<h4>Highlight Styles</h4>
+					
+			<p><strong>Excepteur sint</strong> occaecat <strong class="darkGray">cupidatat non</strong>, proident <strong class="gray">sunt in culpa qui</strong> officia <strong class="white">deserunt mollit</strong> anim id est laborum. <strong class="turquoise">Lorem ipsum</strong> dolor sit amet, <strong class="yellow">consectetur adipisicing</strong> elit, sed <strong class="orange">do eiusmod</strong> temporincididunt <strong class="red">ut labore</strong> et <strong class="green">dolore</strong> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. <strong class="blue">Duis aute</strong> irure <strong class="purple">dolor in reprehenderit</strong> in voluptate velit esse cillum dolore <strong class="pink">eu fugiat</strong> nulla pariatur.</p>
+			
+			<p><em>Ea commodo</em> consequat. <em class="darkGray">Duis aute</em> irure <em class="gray">dolor in reprehenderit</em> in voluptate velit esse cillum dolore <em class="white">eu fugiat</em> nulla pariatur. <em class="turquoise">Excepteur sint</em> occaecat <em class="yellow">cupidatat non</em> proident, <em class="orange">sunt in culpa</em> qui <em class="red">officia</em> deserunt <em class="green">mollit</em> anim id est laborum. <em class="blue">Duis aute</em> irure <em class="purple">dolor in reprehenderit</em> in voluptate velit esse cillum dolore <em class="pink">eu fugiat</em> nulla pariatur.</p>
+			
+			<div class="clearfix"></div>
+			<div class="divider"></div>
+			<div class="clearfix"></div>
+			
+			<h4>Lists</h4>
+			
+			<ul class="darkGrayDot">
+				<li>Lorem ipsum</li>
+				<li class="darkGrayArrow1">Lorem ipsum</li>
+				<li class="darkGrayArrow2">Lorem ipsum</li>
+				<li class="darkGrayTick">Lorem ipsum</li>
+				<li class="darkGrayPlus">Lorem ipsum</li>
+				<li class="darkGrayDash">Lorem ipsum</li>
+			</ul>
+			
+			<ul class="grayDot">
+				<li>Lorem ipsum</li>
+				<li class="grayArrow1">Lorem ipsum</li>
+				<li class="grayArrow2">Lorem ipsum</li>
+				<li class="grayTick">Lorem ipsum</li>
+				<li class="grayPlus">Lorem ipsum</li>
+				<li class="grayDash">Lorem ipsum</li>
+			</ul>
+			
+			<ul class="whiteDot">
+				<li>Lorem ipsum</li>
+				<li class="whiteArrow1">Lorem ipsum</li>
+				<li class="whiteArrow2">Lorem ipsum</li>
+				<li class="whiteTick">Lorem ipsum</li>
+				<li class="whitePlus">Lorem ipsum</li>
+				<li class="whiteDash">Lorem ipsum</li>
+			</ul>
+			<ul class="greenDot">
+			  <li>Lorem ipsum</li>
+				<li class="greenArrow1">Lorem ipsum</li>
+				<li class="greenArrow2">Lorem ipsum</li>
+				<li class="greenTick">Lorem ipsum</li>
+				<li class="greenPlus">Lorem ipsum</li>
+				<li class="greenDash">Lorem ipsum</li>
+			</ul>
+			
+			<ul class="blueDot">
+				<li>Lorem ipsum</li>
+				<li class="blueArrow1">Lorem ipsum</li>
+				<li class="blueArrow2">Lorem ipsum</li>
+				<li class="blueTick">Lorem ipsum</li>
+				<li class="bluePlus">Lorem ipsum</li>
+				<li class="blueDash">Lorem ipsum</li>
+			</ul>
+    	</section>
+    </div>
+    <!--start footer-->
+    <div id="footer-wrapper">
+    	<div id="footer-top" class="clearfix">
+        	<footer>
+            	<div class="column_one_third column-footer-widget">
+                	<div class="widget_text">
+                        <div id="footer-logo">
+                            <h6 class="widgettitle">Title</h6>
+                        </div>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, ... Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="">Read More.</a></p>
+					</div>
+                </div>
+                <div class="column_one_third column-footer-widget">
+                    <div class="widget_twitter">
+                    	<h6 class="widgettitle">Title</h6>
+                    	<div id='filter' class="query"></div>
+                    </div>
+                </div>
+                <div class="column_one_third column-footer-widget last">
+                    <div class="widget_text">
+                		<h6 class="widgettitle">Title</h6>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</p>
+                        <p>Tel: 972-883-ATEC
+                        Mail: <a href="">atec@utdallas.edu</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="footer-bottom">
+        	<footer>
+                <p class="footer-copyright">&copy; copyright 2013. The University of Texas at Dallas. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
