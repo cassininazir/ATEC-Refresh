@@ -1,0 +1,5 @@
+/* DIN Pro */ 
+@font-face {	
+font-family:'DIN Regular';src:url('../type/rg/rg.eot');src:local('DIN Regular'), local('DIN-Regular'), url('../type/rg/rg.otf') format('opentype'), url('../type/rg/rg.woff') format('woff'), url('../type/rg/rg.ttf') format('truetype'), url('../type/rg/rg.svg#DINPro-Regular') format('svg')} 
+@font-face {	font-family:'DIN Bold';src:url('../type/bo/bo.eot');src:local('DIN Bold'), local('DIN-Bold'), url('../type/bo/bo.otf') format('opentype'), url('../type/bo/bo.woff') format('woff'), url('../type/bo/bo.ttf') format('truetype'), url('../type/bo/bo.svg#DINPro-Bold') format('svg')} 
+@font-face{font-family:'DIN Black';src:url('../type/bl/bl.eot');src:local('DIN Black'), local('DIN-Black'), url('../type/bl/bl.eot?#iefix') format('embedded-opentype'), url('../type/bl/bl.woff') format('woff'), url('../type/bl/bl.ttf') format('truetype'), url('../type/bl/bl.svg#webfont') format('svg')}

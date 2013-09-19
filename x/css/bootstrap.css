@@ -394,9 +394,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'din-condensed-web', 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'DIN Bold', 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: .98;
 }
 h1 small,
 h2 small,
