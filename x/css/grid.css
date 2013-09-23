@@ -209,3 +209,21 @@ width: auto !important;
 	font-family:"athelas";
 	font-style: italic;
 }
+
+/* research */
+.faculty-list {
+	font-size: 16px;
+	font-family: "DIN Regular", sans-serif;
+	margin: 0;
+	list-style: none;
+}
+.smaller { 
+	font-size: 18px;
+	line-height: 1;
+}
+#research section {
+	padding-top: 25px;
+}
+#research h6 {
+	margin-bottom:6px;
+}
