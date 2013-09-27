@@ -3,7 +3,7 @@ Interim refresh of the current UT Dallas Arts and Technology website to reflect 
 
 
 ## Project Team
-Charles Vincent
-Roger Malina
-Paul Fishwick
+Charles Vincent <br>
+Roger Malina <br>
+Paul Fishwick <br>
 Cassini Nazir
