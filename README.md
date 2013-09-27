@@ -1,4 +1,4 @@
-# ATEC-1.5-Refresh
+# ATEC 1.5 Refresh
 Interim refresh of the current UT Dallas Arts and Technology website to reflect new content and support mobile and tablet devices. 
 
 
