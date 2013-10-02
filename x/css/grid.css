@@ -1,3 +1,9 @@
+a:hover {
+	text-decoration: none;	
+}
+p.lead {
+	font-style: italic;	
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -41,13 +47,13 @@ hr {
 #sidescroll::-webkit-scrollbar { 
     display: none; 
 }
-menu { padding: 0 0 0 15px;
+#piece menu { padding: 0 0 0 15px;
 width: 3000px;
 display: block;
 overflow: hidden;
 height: auto;
  }
-menu li { list-style: none;
+#piece menu li { list-style: none;
 	background: #f3f3f3;
 	float: left; margin: 0 12px 12px 0;
 	width: 200px;
@@ -55,7 +61,7 @@ menu li { list-style: none;
 	overflow: hidden;
 	position: relative;
 }
-menu li a{
+#piece  menu li a{
 	width: 200px;
 	height: 300px;
 	padding: 0;
@@ -68,7 +74,7 @@ line-height: 1;
 font-size: 15px;
 font-style: italic;
 }
-menu li a h4 {
+#piece menu li a h4 {
 	font-family: "DIN Bold", sans-serif;
 	font-size: 24px;
 	font-style:normal;
@@ -227,3 +233,77 @@ width: auto !important;
 #research h6 {
 	margin-bottom:6px;
 }
+
+/* portfolio */
+#portfolio {
+	font-size: 17px;
+	line-height: 1.25;
+}
+#portfolio h4 {
+	font-size: 24px;
+	margin: 0 0 8px
+}
+#portfolio .cat {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "DIN Regular", sans-serif;
+	margin: 0 0 10px 0;
+}
+#portfolio .cat a {
+	color: #888;	
+}
+#portfolio .tooltip-inner {
+	font-size: 10px;
+}
+
+#portfolio menu {
+	margin: 0 auto;
+	display: block;
+	text-align: center;	
+	padding: 0;
+}
+
+#portfolio menu li {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "DIN Bold", sans-serif;
+	list-style: none;
+}
+#portfolio menu li a {
+	background: white;
+	border: 1px solid #f3f3f3;
+	border-radius: 4px;
+	padding: 2px 4px;
+	float: left;
+	display: inline-block;
+	margin: 0 12px 8px 0;
+	color: #444;
+}
+#portfolio menu li a:hover {
+	background: #FFB612;
+	border: 1px solid #FFB612;
+	color: white;
+}
+#portfolio p img {
+	padding-bottom:2px;
+	border-bottom:5px solid white;	
+}
+#portfolio p img:hover {
+	border-bottom:5px solid #FFB612;	
+}
+
+/* building */
+#building #hero {
+}
+
+/* course */
+.course-name, .course-prof, .course-num {
+	font-size: 14px;
+	font-family: "DIN Regular", sans-serif;
+	text-align: text-bottom;
+} 
+.course-name {
+	font-family: "DIN Bold", sans-serif;
+	font-size: 18px;
+}
+.
