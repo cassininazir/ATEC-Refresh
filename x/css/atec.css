@@ -1,0 +1,321 @@
+/* ATEC specific styles */
+a {
+	color: #ffb612;
+}
+a:hover {
+	text-decoration: none;	
+	color: #C75B12;	
+}
+p.lead {
+	font-style: italic;	
+}
+
+
+.btn {
+	font-size: 12px;
+	font-family: "DIN Bold", sans-serif;
+	border: 1px solid #ffb612;
+}
+.btn.active { 
+	background: #FFB612;
+	box-shadow: none;
+	border: 1px solid #ffb612;
+}
+.btn.active:hover { 
+	background: #FFB612;
+	box-shadow: none;
+	border: 1px solid #ffb612;
+}
+
+.btn:hover {
+	border: 1px solid #ffb612;
+	color: #C75B12;
+	background: #fff;
+}
+
+/* blog */
+#sidescroll {
+	width:100%; 
+	overflow:scroll;
+}
+#sidescroll::-webkit-scrollbar { 
+    display: none; 
+}
+#sidescroll menu { padding: 0 0 0 15px;
+width: 3000px;
+display: block;
+overflow: hidden;
+height: auto;
+ }
+#sidescroll menu li { list-style: none;
+	background: #f3f3f3;
+	float: left; margin: 0 10px 10px 0;
+	width: 200px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	background-repeat: none;
+}
+#sidescroll  menu li a{
+	width: 200px;
+	height: 300px;
+	padding: 12px;
+	margin: 0;
+display: inline-block;
+
+position: absolute;
+border-bottom: 2px solid #fff;
+line-height: 1;
+font-size: 15px;
+font-style: italic;
+color: #fff;
+text-shadow: 1px 1px 1px rgba(0,0,0, 0.4)
+}
+#sidescroll menu li a:hover {
+	border-bottom: 2px solid #ffb612;
+}
+#sidescroll menu li a h4 {
+	font-family: "DIN Bold", sans-serif;
+	font-size: 22px;
+	font-style:normal;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 20px;
+}
+
+#sidescroll menu li a div {
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 15px;
+}
+blockquote {
+	font-style: italic;
+}
+blockquote small {
+	font-size: 12px; 
+	font-family: "DIN Regular", sans-serif;
+	font-style:normal;
+}
+article h5 {
+padding: 25px 0 12px 0;
+}
+p.postedon {
+	font-size: 13px; 
+	font-family: "DIN Regular", sans-serif;
+	color: #8C8C8C;
+	margin-bottom: 45px;
+}
+article.blogpost footer {
+	border-top: 1px solid #D8D8D8;
+	padding-top: 25px;
+	margin-top: 20px;
+font-size: 15px; 
+	font-family: "DIN Regular", sans-serif;
+	color: #8C8C8C;
+}
+article.blogpost footer strong {
+	font-family: "DIN Bold", sans-serif;
+	letter-spacing: -.078em !important;
+}
+#auxiliary ul {
+	padding:0;
+	list-style: none;
+}
+#auxiliary h4 {
+	font-size: 16px;
+	text-transform: uppercase;	
+}
+#auxiliary li {
+	font-size: 15px;
+line-height: 1.19;
+padding-bottom: 7px;}
+
+img.desaturate{
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: url(desaturate.svg#greyscale);
+filter: gray;
+}
+
+/* faculty */
+#faculty-info {
+	font-size:16px;
+}
+#faculty-info h4 {
+	margin-top: 0;
+font-size: 15px;
+text-transform: uppercase;}
+
+.faculty-title {
+	font-style:italic;
+	line-height:1;
+	padding-bottom:18px;
+	border-bottom: 1px solid #ccc;
+}
+#faculty h4 {
+	margin-top: 0;
+}
+
+/* portfolio + pieces */
+#piece dl.team dt {
+	border-top: 1px solid #ccc;
+	width:40%;
+	float:left;
+	clear: both;
+	font-size: 14px;
+	font-family: "DIN Bold", sans-serif;
+	letter-spacing: -.078em;
+	text-transform:uppercase;
+	color:#777;
+}
+#piece dl.team dd {
+	border-top: 1px solid #ccc;
+	width: 60%;
+	float:right;
+	font-size: 14px;
+	font-family: "DIN Regular", sans-serif;
+}
+#piece menu {
+	height:350px;}
+#piece menu li {
+	width: auto !important;
+	height:350px !important;}
+#piece menu li img {
+width: auto !important;
+	height:350px !important;}
+.glyphicon-circle-arrow-up {
+    -webkit-transition-duration: 0.28s;
+    -moz-transition-duration: 0.28s;
+    -o-transition-duration: 0.28s;
+    transition-duration: 0.28s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+ 
+    }  
+ 
+.glyphicon-circle-arrow-up:hover  
+{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+} 
+#piece dl.piece-info {
+	font-size:12px;
+}
+#piece dl.piece-info dt {
+	text-transform:uppercase;
+	font-family: "DIN Regular", sans-serif;
+	font-size:12px;
+	letter-spacing: -.089em !important;
+}
+#piece dl.piece-info dd {
+	font-family: "DIN Bold", sans-serif;
+	padding-bottom:6px;
+
+}
+#piece h4 {
+	font-size: 18px;}
+#piece p.tagline {
+	font-family:"athelas";
+	font-style: italic;
+}
+
+/* research */
+.faculty-list {
+	font-size: 16px;
+	font-family: "DIN Regular", sans-serif;
+	margin: 0;
+	list-style: none;
+}
+.smaller { 
+	font-size: 18px;
+	line-height: 1;
+}
+#research section {
+	padding-top: 25px;
+}
+#research h6 {
+	margin-bottom:6px;
+}
+
+/* portfolio */
+#portfolio {
+	font-size: 17px;
+	line-height: 1.25;
+}
+#portfolio h4 {
+	font-size: 24px;
+	margin: 0 0 8px
+}
+#portfolio .cat {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "DIN Regular", sans-serif;
+	margin: 0 0 10px 0;
+}
+#portfolio .cat a {
+	color: #888;	
+}
+#portfolio .tooltip-inner {
+	font-size: 10px;
+}
+
+#portfolio menu {
+	margin: 0 auto;
+	display: block;
+	text-align: center;	
+	padding: 0;
+}
+
+#portfolio menu li {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "DIN Bold", sans-serif;
+	list-style: none;
+}
+#portfolio menu li a {
+	background: white;
+	border: 1px solid #f3f3f3;
+	border-radius: 4px;
+	padding: 2px 4px;
+	float: left;
+	display: inline-block;
+	margin: 0 12px 8px 0;
+	color: #444;
+}
+#portfolio menu li a:hover {
+	background: #FFB612;
+	border: 1px solid #FFB612;
+	color: white;
+}
+#portfolio p img {
+	padding-bottom:2px;
+	border-bottom:5px solid white;	
+}
+#portfolio p img:hover {
+	border-bottom:5px solid #FFB612;	
+}
+#portfolio h4 a {
+	color: #000;
+}
+
+/* building */
+#building #hero {
+}
+
+/* course */
+.course-name, .course-prof, .course-num {
+	font-size: 14px;
+	font-family: "DIN Regular", sans-serif;
+	text-align: text-bottom;
+} 
+.course-name {
+	font-family: "DIN Bold", sans-serif;
+	font-size: 18px;
+}
+.
