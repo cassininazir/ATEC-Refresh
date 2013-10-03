@@ -1,6 +1,6 @@
 /* ATEC specific styles */
 a {
-	color: #ffb612;
+	color: #E98300;
 }
 a:hover {
 	text-decoration: none;	
@@ -9,8 +9,24 @@ a:hover {
 p.lead {
 	font-style: italic;	
 }
+.caption {
+	font-size: 13px;
+	line-height: 1;
+}
+.font-14 {
+	font-size: 14px !important;
+}
+.font-16 {
+	font-size: 16px !important;
+}
+.font-18 {
+	font-size: 18px !important;
+}
 
-
+dd {}
+.din {
+	font-family: "DIN Regular", sans-serif;
+}
 .btn {
 	font-size: 12px;
 	font-family: "DIN Bold", sans-serif;
@@ -70,10 +86,21 @@ line-height: 1;
 font-size: 15px;
 font-style: italic;
 color: #fff;
-text-shadow: 1px 1px 1px rgba(0,0,0, 0.4)
+text-shadow: 1px 1px 1px rgba(0,0,0, 0.4);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.13) 59%, rgba(0,0,0,0.72) 98%, rgba(0,0,0,0.72) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0.13)), color-stop(98%,rgba(0,0,0,0.72)), color-stop(100%,rgba(0,0,0,0.72))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 59%,rgba(0,0,0,0.72) 98%,rgba(0,0,0,0.72) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 59%,rgba(0,0,0,0.72) 98%,rgba(0,0,0,0.72) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 59%,rgba(0,0,0,0.72) 98%,rgba(0,0,0,0.72) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.13) 59%,rgba(0,0,0,0.72) 98%,rgba(0,0,0,0.72) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b8000000',GradientType=0 ); /* IE6-9 */
+
+}
+#sidescroll menu li.current {
+	border-bottom: 5px solid #C75B12;
 }
 #sidescroll menu li a:hover {
-	border-bottom: 2px solid #ffb612;
+	border-bottom: 5px solid #ffb612;
 }
 #sidescroll menu li a h4 {
 	font-family: "DIN Bold", sans-serif;
@@ -96,6 +123,11 @@ blockquote small {
 	font-size: 12px; 
 	font-family: "DIN Regular", sans-serif;
 	font-style:normal;
+}
+blockquote small strong {
+	font-family: "DIN Bold", sans-serif;
+	font-style:normal;
+	letter-spacing: -.05em;
 }
 article h5 {
 padding: 25px 0 12px 0;
@@ -306,6 +338,13 @@ width: auto !important;
 
 /* building */
 #building #hero {
+}
+
+#building .well {
+	background: #ffb612;
+	border: none;
+	font-size: 18px;
+	line-height: 1.1;
 }
 
 /* course */

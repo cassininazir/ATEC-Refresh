@@ -1,3 +1,8 @@
+@import url(../x/css/fonts.css);
+h4#typeme {
+	font-size: 54px;
+	line-height: 1;
+}
 /*------------------------------------------------------
 
 	Theme Name: Cartel
@@ -70,7 +75,7 @@
 		#header-wrapper #header-inner header nav ul.navigation{position:relative;list-style:none;float:right;font-size:13px; margin:28px 0 0 0; text-transform:uppercase;}
 		#header-wrapper #header-inner header nav ul.navigation li{float:left;margin:0 0 0 25px;line-height:45px;}
 		#header-wrapper #header-inner header nav ul.navigation li:last-child{padding-right:0;}
-		#header-wrapper #header-inner header nav ul.navigation li a{font-family: 'din-condensed-web', sans-serif;color:#999; text-decoration:none;  padding: 5px 0;}
+		#header-wrapper #header-inner header nav ul.navigation li a{font-family: 'DIN Bold', sans-serif;color:#999; text-decoration:none;  padding: 5px 0;}
 		#header-wrapper #header-inner header nav ul.navigation li:hover .sub-menu{/*display:block;*/}
 		#header-wrapper #header-inner header nav ul.navigation li a:hover{color:#E98300;}
 		#header-wrapper #header-inner header nav ul.navigation li a.active{color:#C75B12;}
@@ -178,7 +183,7 @@
 	/*half-width featured display*/
 	.featured-media-container .column-featured-half.featured-info{background:#000;width:50%;display:table; float:left;height:100%;}
 	.featured-media-container .column-featured-half.featured-info .featured-info-inner{display:table-cell;width:100%;vertical-align:middle; text-align:center;}
-	.featured-media-container .column-featured-half.featured-info .featured-info-inner span{font:30px/30px "din-condensed-web", Arial, sans-serif;padding:10px 20px;border:1px solid #fff;color:#fff;}
+	.featured-media-container .column-featured-half.featured-info .featured-info-inner span{font:30px/30px "DIN Bold", Arial, sans-serif;padding:10px 20px;border:1px solid #fff;color:#fff;}
 	.featured-media-container .column-featured-half.featured-info .featured-info-inner span span{font-size:15px; line-height:15px;border:none;padding:0;}
 	
 	/*grid*/
@@ -220,9 +225,9 @@
 			
 			/*date*/
 			.blog-post-meta-date{ position:absolute;top:50%;right:0;margin-top:-46.5px;width:46px; float:left;color:#000; background:#fff;padding:5px 0px 5px 5px;}
-			.blog-post-meta-date span.month{font:30px/30px "din-condensed-web", Arial, sans-serif; text-transform:uppercase;}
-			.blog-post-meta-date span.day{font:45px/30px "din-condensed-web", Arial, sans-serif;text-transform:uppercase;}
-			.blog-post-meta-date span.year{font:22px/18px "din-condensed-web", Arial, sans-serif; text-transform:uppercase;}
+			.blog-post-meta-date span.month{font:30px/30px "DIN Bold", Arial, sans-serif; text-transform:uppercase;}
+			.blog-post-meta-date span.day{font:45px/30px "DIN Bold", Arial, sans-serif;text-transform:uppercase;}
+			.blog-post-meta-date span.year{font:22px/18px "DIN Bold", Arial, sans-serif; text-transform:uppercase;}
 			
 			
 			/*meta*/
@@ -242,8 +247,8 @@
 			
 			/*comment styling*/
 			section#blog-post-comments ol.comment-list li.comment .commentary{padding-left:100px;}
-			section#blog-post-comments ol.comment-list li.comment .commentary .comment-author{font:20px/20px "din-condensed-web", Arial, sans-serif; font-weight:bold;margin-bottom:2px; color:#999;  text-transform:normal;}
-			section#blog-post-comments ol.comment-list li.comment .commentary .comment-author span{font-family: "din-condensed-web", Arial, sans-serif; font-weight:normal;}
+			section#blog-post-comments ol.comment-list li.comment .commentary .comment-author{font:20px/20px "DIN Bold", Arial, sans-serif; font-weight:bold;margin-bottom:2px; color:#999;  text-transform:normal;}
+			section#blog-post-comments ol.comment-list li.comment .commentary .comment-author span{font-family: "DIN Bold", Arial, sans-serif; font-weight:normal;}
 			section#blog-post-comments ol.comment-list li.comment .commentary .comment-meta{width:100%; float:left; color:#999;margin-bottom:20px; font-size:11px;}
 			section#blog-post-comments ol.comment-list li.comment .commentary .comment-meta a{color:#666;font-weight:normal; }
 			section#blog-post-comments ol.comment-list li.comment .commentary .comment-meta a:hover{color:#e70000;text-decoration:underline;}
@@ -501,7 +506,7 @@
 	.display-image{ position:relative;float:left; margin-bottom:50px;}
 	.display-image img{max-width:100%;height:auto; line-height:0; display:block;position:relative;z-index:0; display:block;}
 	.caption{z-index:3;color:#fff; position:absolute;top:50px;left:50px; border-color:#fff; text-transform:uppercase;}
-	.caption div,.caption span{font-family: "din-condensed-web", Arial, sans-serif;}
+	.caption div,.caption span{font-family: "DIN Bold", Arial, sans-serif;}
 	.caption p{font:13px/19px Arial, Helvetica, sans-serif;margin:0; text-transform:none;}
 	
 		/*colors*/
@@ -637,8 +642,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 --------------------------------------------------------*/
 
 	/*font & color*/
-	h1,h2,h3,h4,h5,h6{font-family: "din-condensed-web", Arial, sans-serif;letter-spacing: 0; margin-bottom:50px; color:#000;}
-	h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family: 'din-condensed-web', sans-serif;font-weight:normal; }
+	h1,h2,h3,h4,h5,h6{font-family: "DIN Bold", Arial, sans-serif;letter-spacing: 0; margin-bottom:50px; color:#000;}
+	h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{font-family: 'DIN Bold', sans-serif;font-weight:normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; border-bottom:0 !important;}
 	a{color:#69BE28;text-decoration:none;}
 	a:hover{color:#E98300;}
@@ -683,5 +688,5 @@ position: absolute;
 padding: 25px;
 background: none;
 font-size: 26px;
-font-family: 'din-condensed-web', helvetica;
+font-family: 'DIN Bold', helvetica;
 color: #fff;}
