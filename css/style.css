@@ -1,8 +1,16 @@
 @import url(../x/css/fonts.css);
 h4#typeme {
-	font-size: 54px;
+	font-size: 36px;
 	line-height: 1;
+	padding-top: 2px !important;
+	margin-top: 2px !important;
 }
+p.fact {
+font-family: "DIN Bold", sans-serif;
+font-size: 12px;
+padding-bottom: 0;
+margin-bottom: 0;
+ }
 /*------------------------------------------------------
 
 	Theme Name: Cartel
@@ -58,7 +66,7 @@ h4#typeme {
 	
 	/*wrappers
 	----------------------------*/
-	#header-wrapper{width:100%; margin-bottom:50px;}
+	#header-wrapper{width:100%; margin-bottom:25px;}
 	#header-wrapper #header-inner{max-width:870px;height:100px;border-bottom:1px solid #eee; margin:auto;}
 	
 		/*logo
@@ -129,7 +137,7 @@ h4#typeme {
 	
 	/*section-title & teaser
 	----------------------------*/
-	#section-title{max-width:870px;padding-bottom:50px;margin:0 auto 50px auto; border-bottom:1px solid #eee;}
+	#section-title{max-width:870px;padding-bottom:25px;margin:0 auto 25px auto; border-bottom:1px solid #eee;}
 	#teaser{font:italic 26px/36px 'athelas', Arial, Helvetica, sans-serif;color:#666;margin:0 auto 50px auto;}
 	
 	/*homepage
